@@ -31,15 +31,15 @@ public class PBOIF210119064Latihan43GajiPegawai {
         gajiPegawai.setUangTransport(250000);
         gajiPegawai.setUangTunjangan(300000);
         gajiPegawai.setGajiPokok(4500000);
-        
+        gajiPegawai.setTotalGaji(gajiPegawai.totalGaji(gajiPegawai.getUangTunjangan(),
+                                                       gajiPegawai.getUangTransport(),
+                                                       gajiPegawai.getGajiPokok()));
         gajiPegawai.tampilData(gajiPegawai.getNama(), 
                                gajiPegawai.getAlamat(), 
                                gajiPegawai.getUangTunjangan(), 
                                gajiPegawai.getUangTransport(), 
                                gajiPegawai.getGajiPokok(),
-                               gajiPegawai.totalGaji(gajiPegawai.getUangTunjangan(), 
-                                                     gajiPegawai.getUangTransport(),
-                                                     gajiPegawai.getGajiPokok()));
+                               gajiPegawai.getTotalGaji());
     }
     
 }

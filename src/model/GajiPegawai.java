@@ -70,9 +70,7 @@ public class GajiPegawai {
     }
     
     public int totalGaji(int uangTunjangan, int uangTransport, int gajiPokok){
-        totalGaji = uangTunjangan + uangTransport + gajiPokok; 
-        
-        return totalGaji; 
+        return uangTunjangan + uangTransport + gajiPokok; 
     }
     
     public void tampilData(String nama, String alamat, int uangTunjangan, int uangTransport, int gajiPokok, int totalGaji){
